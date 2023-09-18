@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" co />
 
     <link rel="icon" type="image/png" href="img/logo-white.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,6 +29,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Priscilla | Portfolio</title>
   </head>
   <body>
@@ -41,13 +44,18 @@
           <li><a class="main-nav-link" href="#about">About </a></li>
           <li><a class="main-nav-link" href="#service">Service</a></li>
           <li><a class="main-nav-link" href="#skills">Skills</a></li>
-          <li><a class="main-nav-link" href="#skills">Portfolio</a></li>
-          <li><a class="main-nav-link" href="#cta">Contact</a></li>
+          <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
-    <section class="section-intro">
+    <section class="section-intro" id="intro">
       <div class="intro">
         <div class="intro-text-box">
           <p class="intro-main">Hello, i'm</p>
@@ -58,24 +66,39 @@
           </p>
 
           <div class="intro-social-links">
-            <a href="#" style="--i: 8"><i class="bx bxl-netlify"></i></a>
-            <a href="#" style="--i: 7"><i class="bx bxl-github"></i></a>
-            <a href="#" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            <a
+              target="_blank"
+              href="https://app.netlify.com/teams/priscilla123456/sites"
+              style="--i: 8"
+              ><i class="bx bxl-netlify"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://github.com/Priscilla123456?tab=repositories"
+              style="--i: 7"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ose-itua-priscilla-oghinan-637718159/"
+              style="--i: 8"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
           </div>
 
-          <a href="#" class="btn-link">More About Me</a>
+          <a href="#service" class="btn-link">More About Me</a>
         </div>
 
         <div class="intro-img-box">
-          <img class="intro-img" src="img/perfil.png" alt="my-img" />
+          <img class="intro-img" src="img/mei.png" alt="my-img" />
         </div>
       </div>
     </section>
 
-    <section class="section-about" data-aos="fade-left">
+    <section class="section-about" id="about" data-aos="fade-left">
       <div class="container about-me-container">
         <div class="about-img">
-          <img src="img/about-removebg-preview.png" alt="about-me-img" />
+          <img src="img/me-about-removebg-preview.png" alt="about-me-img" />
         </div>
 
         <div class="about-text-box">
@@ -99,7 +122,7 @@
 
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1IwzjaHMdp1EZ-pkuOIrMpiiEX5_4Pw9m/view"
+            href="https://drive.google.com/file/d/1PQ_ock-xrAE1-gZE52pL8vjR59QsxGs4/view?usp=sharing"
             class="btn-link"
             >Download CV</a
           >
@@ -107,7 +130,7 @@
       </div>
     </section>
 
-    <section class="section-services" data-aos="fade-right">
+    <section class="section-services" id="service" data-aos="fade-right">
       <div class="container">
         <div class="service-container">
           <div>
@@ -127,7 +150,7 @@
                 responsive and functional elements that work well across various
                 devices and browsers.
               </p>
-              <a href="#" class="read">Learn more</a>
+              <!-- <a href="#" class="read">Learn more</a> -->
             </div>
 
             <div class="services-list">
@@ -137,12 +160,11 @@
               ></i>
               <h2 class="services-list-heading">Web management</h2>
               <p class="services-list-paragraph">
-                I am a dedicated Web Manager who is enthusiastic about creating
-                attractive and functional web applications. My main
-                responsibility involves supervising and upkeeping websites to
-                guarantee outstanding user experiences.
+                I'm a passionate Web Manager, skilled in crafting attractive and
+                functional websites. My main role involves overseeing and
+                maintaining websites for exceptional user experiences.
               </p>
-              <a href="#" class="read">Learn more</a>
+              <!-- <a href="#" class="read">Learn more</a> -->
             </div>
 
             <div class="services-list">
@@ -152,19 +174,18 @@
               ></i>
               <h2 class="services-list-heading">Web Designer</h2>
               <p class="services-list-paragraph">
-                I'm a passionate Web Designer skilled in crafting visually
-                impressive and functional web applications. My focus is on
-                creating websites that captivate users with aesthetics while
-                delivering a seamless and user-friendly experience.
+                I'm a dedicated web designer, focused on making websites that
+                look great and work well for users. My goal is to create sites
+                that are both visually appealing and easy to use.
               </p>
-              <a href="#" class="read">Learn more</a>
+              <!-- <a href="#" class="read">Learn more</a> -->
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-skills" data-aos="fade-left">
+    <section class="section-skills" id="skills" data-aos="fade-left">
       <div class="container">
         <div>
           <h2 class="skills-main">My <span>Skills</span></h2>
@@ -242,7 +263,7 @@
                   <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                 </svg>
                 <div class="percentage">90%</div>
-                <div class="text">Creativity</div>
+                <div class="texts">Creativity</div>
               </div>
 
               <div class="radial-bar">
@@ -256,7 +277,7 @@
                   <circle class="path path-2" cx="100" cy="100" r="80"></circle>
                 </svg>
                 <div class="percentage">95%</div>
-                <div class="text">Communication</div>
+                <div class="texts">Communication</div>
               </div>
 
               <div class="radial-bar">
@@ -270,7 +291,7 @@
                   <circle class="path path-3" cx="100" cy="100" r="80"></circle>
                 </svg>
                 <div class="percentage">85%</div>
-                <div class="text">Problem solving</div>
+                <div class="texts">Problem solving</div>
               </div>
 
               <div class="radial-bar">
@@ -285,7 +306,7 @@
                 </svg>
 
                 <div class="percentage">90%</div>
-                <div class="text">Team Work</div>
+                <div class="texts">Team Work</div>
               </div>
             </div>
           </div>
@@ -293,9 +314,9 @@
       </div>
     </section>
 
-    <section class="section-portfolio" data-aos="fade-right">
+    <section class="section-portfolio" id="portfolio" data-aos="fade-right">
       <div class="container">
-        <h2 class="portfolio-main">Latest <span>Project</span></h2>
+        <h2 class="portfolio-main">My <span>Project</span></h2>
 
         <div class="portfolio-content">
           <div class="row">
@@ -305,11 +326,11 @@
               <p>My Sample Portfolio Website</p>
 
               <div class="btn">
-                <a
+                <!-- <a
                   target="_blank"
-                  href="https://my-sample-portfolio-p.netlify.app/"
+                  href="https://priscilla123456.github.io/My-portfolio/"
                   >Github</a
-                >
+                > -->
 
                 <a
                   target="_blank"
@@ -324,18 +345,16 @@
             <img src="img/portfolio2.jpg" alt="portfolio" />
             <div class="layer">
               <h5>Project 2</h5>
-              <p>Comono Website</p>
+              <p>My Recipe Website</p>
 
               <div class="btn">
-                <a
+                <!-- <a
                   target="_blank"
                   href="https://my-sample-portfolio-p.netlify.app/"
                   >Github</a
-                >
+                > -->
 
-                <a
-                  target="_blank"
-                  href="https://my-sample-portfolio-p.netlify.app/"
+                <a target="_blank" href="https://my-recipes-site.netlify.app/"
                   >Live Demo</a
                 >
               </div>
@@ -346,18 +365,16 @@
             <img src="img/portfolio3.jpg" alt="portfolio" />
             <div class="layer">
               <h5>Project 3</h5>
-              <p>Omnifood Website</p>
+              <p>Comono Website</p>
 
               <div class="btn">
-                <a
+                <!-- <a
                   target="_blank"
-                  href="https://my-sample-portfolio-p.netlify.app/"
+                  href="https://priscilla123456.github.io/comono-website/"
                   >Github</a
-                >
+                > -->
 
-                <a
-                  target="_blank"
-                  href="https://my-sample-portfolio-p.netlify.app/"
+                <a target="_blank" href="https://my-comono-website.netlify.app/"
                   >Live Demo</a
                 >
               </div>
@@ -365,21 +382,19 @@
           </div>
 
           <div class="row">
-            <img src="img/portfolio4.jpg" alt="portfolio" />
+            <img src="img/portfolio2.jpg" alt="portfolio" />
             <div class="layer">
               <h5>Project 4</h5>
-              <p>Omnifood Website</p>
+              <p>Card Game Website</p>
 
               <div class="btn">
-                <a
+                <!-- <a
                   target="_blank"
                   href="https://my-sample-portfolio-p.netlify.app/"
                   >Github</a
-                >
+                > -->
 
-                <a
-                  target="_blank"
-                  href="https://my-sample-portfolio-p.netlify.app/"
+                <a target="_blank" href="https://my-card-game.netlify.app/"
                   >Live Demo</a
                 >
               </div>
@@ -387,21 +402,15 @@
           </div>
 
           <div class="row">
-            <img src="img/portfolio5.jpg" alt="portfolio" />
+            <img src="img/portfolio3.jpg" alt="portfolio" />
             <div class="layer">
               <h5>Project 5</h5>
-              <p>Omnifood Website</p>
+              <p>Pizza Website</p>
 
               <div class="btn">
                 <a
                   target="_blank"
-                  href="https://my-sample-portfolio-p.netlify.app/"
-                  >Github</a
-                >
-
-                <a
-                  target="_blank"
-                  href="https://my-sample-portfolio-p.netlify.app/"
+                  href="https://priscilla-pizza-app.netlify.app/"
                   >Live Demo</a
                 >
               </div>
@@ -409,21 +418,19 @@
           </div>
 
           <div class="row">
-            <img src="img/portfolio6.jpg" alt="portfolio" />
+            <img src="img/portfolio1.jpg" alt="portfolio" />
             <div class="layer">
               <h5>Project 6</h5>
-              <p>Omnifood Website</p>
+              <p>Food Blog</p>
 
               <div class="btn">
-                <a
+                <!-- <a
                   target="_blank"
                   href="https://my-sample-portfolio-p.netlify.app/"
                   >Github</a
-                >
+                > -->
 
-                <a
-                  target="_blank"
-                  href="https://my-sample-portfolio-p.netlify.app/"
+                <a target="_blank" href="https://my-food-blog.netlify.app/"
                   >Live Demo</a
                 >
               </div>
@@ -433,7 +440,7 @@
       </div>
     </section>
 
-    <section class="section-cta" id="cta" data-aos="fade-left">
+    <section class="section-cta" id="cta" data-aos="fade-up">
       <div class="container">
         <div class="cta-container">
           <div>
@@ -450,7 +457,7 @@
             </div>
           </div>
 
-          <form class="cta" name="sign-up" netlify>
+          <form class="cta" name="contact-me" netlify>
             <div>
               <label for="Name"><strong>Name</strong></label>
               <input
@@ -499,21 +506,35 @@
       <div class="container footer-container">
         <ul class="social-links">
           <li>
-            <a class="footer-link" href="#"><i class="bx bxl-netlify"></i></a>
+            <a
+              target="_blank"
+              class="footer-link"
+              href="https://app.netlify.com/teams/priscilla123456/sites"
+              ><i class="bx bxl-netlify"></i
+            ></a>
           </li>
 
           <li>
-            <a class="footer-link" href="#"><i class="bx bxl-github"></i></a>
+            <a
+              target="_blank"
+              class="footer-link"
+              href="https://github.com/Priscilla123456?tab=repositories"
+              ><i class="bx bxl-github"></i
+            ></a>
           </li>
 
           <li>
-            <a class="footer-link" href="#"><i class="bx bxl-linkedin"></i></a>
+            <a
+              target="_blank"
+              class="footer-link"
+              href="https://www.linkedin.com/in/ose-itua-priscilla-oghinan-637718159/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
           </li>
         </ul>
 
         <p class="copyright">
-          copyright &copy; <span class="year">2027</span> by
-          <span>priscilla.com,</span> Inc. All rights reserved.
+          copyright &copy; 2023 | Built by Priscilla Oghinan
         </p>
       </div>
     </footer>
@@ -525,7 +546,7 @@
   <script>
     AOS.init({
       offset: 400,
-      duration: 1000,
+      duration: 500,
     });
   </script>
   <script

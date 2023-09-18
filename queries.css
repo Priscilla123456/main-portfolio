@@ -1,0 +1,391 @@
+/*****************************************/
+/* BELOW 1344px (84*16) SMALLER DESKTOPS
+/*****************************************/
+
+/* 1350 (breakpoint) / 16 (default font size) = 84.375 app 84 */
+@media (max-width: 84em) {
+  .intro {
+    max-width: 120rem;
+  }
+}
+
+/*****************************************/
+/* BELOW 1200 (75*16) LANDSCAPE TABLETS
+/*****************************************/
+
+/* 1200 (breakpoint) / 16 = 75  */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.25%  */
+    font-size: 56.25%;
+  }
+
+  .intro {
+    gap: 4rem;
+  }
+
+  .about-me-container {
+    gap: 4.8rem;
+  }
+
+  .about-me-paragraph {
+    line-height: 1.7;
+  }
+
+  .services-list-heading {
+    font-size: 2.8rem;
+  }
+
+  .services-list-paragraph {
+    line-height: 1.8;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 992px (Tablets) */
+/**************************/
+
+@media (max-width: 62em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .intro-main {
+    font-size: 2rem;
+  }
+
+  .intro-name {
+    font-size: 4rem;
+  }
+
+  .intro-description {
+    font-size: 2rem;
+  }
+
+  .intro-img {
+    width: 80%;
+  }
+
+  .about-me-paragraph {
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+
+  .about-img img {
+    width: 90%;
+  }
+
+  .services-list {
+    padding: 2.4rem 2.8rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Technical-bars {
+    padding: 0 10rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .main-nav {
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    background-color: #081b29;
+
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows no transitions at all */
+    /* display: none; */
+
+    /* 1}Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #ededed;
+  }
+}
+
+/**********************************************/
+/* BELOW 752px (44 * 16 ) Smaller tablets */
+/***********************************************/
+
+/* 750 / 16 = 46.875 = 50 */
+
+@media (max-width: 50em) {
+  .intro {
+    grid-template-columns: 1fr;
+    /* text-align: center; */
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .intro-text-box {
+    text-align: center;
+  }
+
+  .intro-main {
+    font-size: 2.8rem;
+  }
+
+  .intro-name {
+    font-size: 6rem;
+  }
+
+  .intro-description {
+    font-size: 2.8rem;
+  }
+
+  .intro-img-box {
+    text-align: center;
+  }
+
+  .intro-img {
+    width: 70%;
+  }
+
+  .btn-link {
+    margin-bottom: 5rem;
+  }
+
+  .section-about {
+    padding: 4.8rem 0 6rem 0;
+  }
+
+  .about-me-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 0 5rem;
+  }
+
+  .about-me-paragraph {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+  .about-img img {
+    display: none;
+  }
+
+  .section-services {
+    padding: 4.8rem 0 6rem 0;
+  }
+
+  .service-description {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+
+  .services-list {
+    padding: 4rem 4.4rem;
+    width: 65rem;
+    grid-column: 1 /-1;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .services-list-paragraph {
+    font-size: 2.4rem;
+  }
+
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* .layer h5 {
+    font-size: 1.5rem;
+  } */
+
+  .cta label {
+    font-size: 3rem;
+  }
+
+  .cta input,
+  .text-area {
+    width: 90%;
+    padding: 4rem;
+  }
+}
+
+/**********************************/
+/* BELOW 544px (34* 16) Phones */
+/*********************************/
+
+/* 550 / 16 = 34.375 = 34*/
+
+@media (max-width: 34em) {
+  .intro {
+    padding: 0 1.5rem;
+  }
+
+  .intro-main {
+    font-size: 2.5rem;
+  }
+
+  .intro-name {
+    font-size: 4rem;
+  }
+
+  .intro-description {
+    font-size: 2rem;
+  }
+
+  .intro-img {
+    width: 90%;
+    justify-self: center;
+  }
+
+  .about-me-container {
+    padding: 0rem 3rem;
+  }
+
+  .about-me-paragraph {
+    font-size: 2rem;
+  }
+
+  .services-list {
+    padding: 2rem 3rem;
+    width: 100%;
+  }
+
+  .services-list-paragraph {
+    font-size: 2rem;
+  }
+
+  .Technical-bars {
+    padding: 0 2.5rem;
+  }
+
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+
+  /* .layer h5 {
+    font-size: 1.5rem;
+  } */
+
+  .cta input {
+    width: 90%;
+    padding: 3rem;
+  }
+
+  .text-area {
+    width: 95%;
+    padding: 2rem;
+  }
+
+  /* .social-links {
+    justify-self: center;
+    gap: 10rem;
+  } */
+
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
+
+/**********************************/
+/* FIXING SAFARI FLEX-BOX GAP */
+/*********************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
